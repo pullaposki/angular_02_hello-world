@@ -1,0 +1,6 @@
+<button (click)="show = !show">Toggle</button>
+
+<div *ngIf="show; else elseBlock">Showing true</div>
+<ng-template #elseBlock>
+  <div>Showing false</div>
+</ng-template>
